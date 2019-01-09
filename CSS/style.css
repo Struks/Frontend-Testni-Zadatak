@@ -1,0 +1,437 @@
+body{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.header_positon{
+    height: 102px;
+    display: grid;
+    grid-template-columns: 930px 930px ;
+}
+    .logo_position{
+        padding-top: 30px;
+        padding-left: 230px;   
+    }
+    .media_position{
+        padding-top: 30px; 
+
+    }  
+    .media_position a:hover img{
+        background-color: white;
+        opacity: 0.5;
+    }
+.main_manu{
+    height: 30px;
+    padding-left: 230px;
+    display: grid;
+    grid-template-columns:83px 83px 83px 83px;
+    padding-top: 20px;
+}
+
+    a{  
+        color: grey;
+        text-decoration: none;
+        
+    }
+.main_manu a:active{
+    color:  #2ecc71;
+}
+.green_field{
+    height: 519px;
+    margin-top: 40px;
+    display: block none;
+    width: 1400px;
+    
+}
+.set_macbook_pro{
+    position: absolute;
+    top: 402px;
+    left: 22.5%;
+    height: 370px;
+    width: 554px;
+    left: 100%;
+    /*animation macbook*/
+    animation: slide-in1 1s cubic-bezier(.36,.37,.55,1.41) forwards;
+}
+/* type of animation */
+@keyframes slide-in1{
+    22.5%{
+        left:100%;
+    }
+    100%{
+        left: 22.5%;
+    }
+}
+.set_iPad{
+    position: absolute;
+    top: 300px;
+    left: 52.1%;
+    left: 100%;
+    /*animation iPad*/
+    animation: slide-in2 2s cubic-bezier(.36,.37,.55,1.41) forwards;
+}
+/* type of animation */
+@keyframes slide-in2{
+    52.1%{
+        left:100%;
+    }
+    100%{
+        left: 52.1%;
+    }
+}
+.set_iPhone{
+    position: absolute;
+    left: 68.65%;
+    top: 524px;
+    left:100%;
+    /*animation iPhone*/
+    animation: slide-in3 3s cubic-bezier(.36,.37,.55,1.41) forwards;
+}
+/* type of animation */
+@keyframes slide-in3{
+    68.65%{
+        left:100%
+    }
+    100%{
+        left: 68.65%;
+    }
+}
+.set_text{
+    position: absolute;
+    top:822px;
+    left: 23.65%;
+    left:100%;
+    /*animation text*/
+    animation: text 3.5s ease-out forwards;
+}
+@keyframes text{
+    23.65%{
+        left: 100%;
+    }
+    100%{
+        left:23.65%;
+    }
+}
+.set_button{
+    position: absolute;
+    top: 890px;
+    left:610px;
+    left:100%;
+    /*animation button*/
+    animation: btn 4s ease-out forwards;
+}
+@keyframes btn{
+    43.2%{
+        left: 100%;
+    }
+    100%{
+        left:43.2%;
+    }
+}
+.set_sunburst{
+    position: absolute;
+    top:188px;
+    transform: scale(1);
+    /*animation sunburst*/
+    animation: sun 4s ease-out;
+}
+@keyframes sun{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+} 
+/* Video configure */
+.video_field_position{
+    position: absolute;
+    left: 232px;
+    top: 1017px;
+}
+
+.video_text_position{
+    position: absolute;
+    left: 638px;
+    top: 1017px;
+}
+/* configure slide show */
+.pointers{
+cursor: pointer;
+}
+.set_mid img{
+    width: 300px;
+    height: 200px;
+}
+.set_slide_text1{
+    position: absolute;
+    top: 1348px;
+    left: 458px;
+}
+.set_slide_text2{
+    position: absolute;
+    top: 1392px;
+    left: 328px;
+}
+.set_left1{
+   position: absolute;
+   top: 1369px;
+   left: 0px;
+}
+.set_leftOverLay{
+    position: absolute;
+    top: 1369px;
+    left: 0px;
+}
+.set_left2{
+    position: absolute;
+    top: 1472px;
+    left: 230px;
+ }
+ .set_leftOverLay2{
+    position: absolute;
+    top: 1472px;
+    left: 230px;
+    width: 300px;
+    height: 200;
+ }
+.set_mid{
+    position: absolute;
+    top: 1472px;
+    left:550px;
+}
+.set_darkUI{
+    position: absolute;
+    top: 1721px;
+    left:631px;
+}
+.set_after_dark{
+    position: absolute;
+    top: 1762px;
+    left:450px;
+}
+.set_layerLeft{
+    position: absolute;
+    top: 1748px;
+    left: 379px;
+}
+.set_layerRight{
+    position: absolute;
+    top: 1748px;
+    left: 1000px;
+}
+.set_right2{
+    position: absolute;
+    top: 1472px;
+    left: 870px;
+}
+.set_rightOverLay2{
+    position: absolute;
+    top: 1472px;
+    left: 870px;
+}
+.set_right1{
+    position: absolute;
+    top: 1300px;
+    left: 1089px;
+}
+.set_rightOverLay1{
+    position: absolute;
+    top: 1300px;
+    left: 1089px;
+}
+h2{
+    font-family: fantasy sans-serif;
+    color: #adacac;
+    font-size: 18pt;
+    text-align: center;
+}
+p{
+    font-family: fantasy sans-serif;
+    color: #adacac;
+    font-size: 14pt;
+    text-align: center; 
+}
+/* Before footer and footer */
+.set_beforeFooter{
+    position: absolute;
+    top: 1822px;
+    left: 0px;
+}
+.set_footer{
+    position: absolute;
+    top: 1950px;
+    left: 0px;
+}
+/*ABOUT page*/
+.set_business{
+    position: absolute;
+    top: 180px;
+    left: 0px;
+}
+.set_aboutImage{
+    position: absolute;
+    top: 307px;
+    left: 211px;
+}
+.set_textRight{
+    position: absolute;
+    top: 330px;
+    left: 638px;
+}
+.set_aboutBotText{
+    position: absolute;
+    top: 640px;
+    left: 229px;
+}
+.set_botRight{
+    position: absolute;
+    top: 640px;
+    left: 720px;
+}
+.set_aboutService{
+    position: absolute;
+    top: 859px;
+    left: 229px;
+}
+/* build tab*/
+.tab_links_and_result{
+    margin-left: 211px;
+    
+
+}
+.tablinks{
+    cursor: pointer;
+    margin-left: 211px;
+    width: 960px;
+    background-color: #efefef;
+    margin-top:780px;
+    display: grid;
+    grid-template-columns: 240px 240px 240px 240px;
+    grid-template-rows: 200px;
+    text-align: center;   
+}
+.tablinks a:active{
+    background-color: #dadada; 
+}
+.tablinks a:hover{
+    background-color: white;  
+}
+.position_WebSites{
+    position: absolute;
+    left: 300px;
+    top:956px;
+}
+.position_Photography{
+    position: absolute;
+    left: 519px;
+    top:969px;
+}
+.position_SEO{
+    position: absolute;
+    left: 801px;
+    top:963px;
+}
+.position_Aplications{
+    position: absolute;
+    left: 1000px;
+    top: 963px;
+}
+.tab{
+    width: 960px;
+    padding-top: 25px;
+    background-color: #efefef;
+    margin-left: 211px;
+    height: 400px;
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 18pt;
+    padding-top: 250px;
+    
+}
+/* WORK page*/
+.category_manu{
+    
+    display: grid;
+    grid-template-columns:42px 65px 132px 53px 590px 30px 30px;
+    grid-template-rows: 22px;
+    margin-top: 170px;
+    margin-left: 230px;
+}
+.category_manu a:active{
+    color: #2ecc71;
+}
+
+.category_manu a img:active{
+    background-color: #2ecc71;
+}
+.set_results{
+    margin-top: 50px;
+    margin-left: 230px;
+    width: 940px;
+    height: auto;
+}
+
+/* WORK page end
+
+/* CONTACT page*/
+
+#map{   
+    width: 1400px;
+    height: 500px;
+    background-color: grey;
+    margin-top:128px;
+    position: auto;
+}
+.text_contact_form img{
+   padding-left: 230px;
+   padding-top: 50px;
+
+}
+form{
+    margin-top: 38px;
+    margin-left: 230px;  
+}
+
+form input{
+    height: 30px;
+    width: 350px;
+    border-color: #8a8888;
+    font-family: Myriad Pro;
+    font-size: 14pt;
+    margin: 8px 0;
+    padding: 12px 20px;
+
+    
+}
+
+form textarea{
+    border-color: #8a8888;
+    height: 220px;
+    width: 560px;
+    font-family: Myriad Pro;
+    font-size: 14pt;  
+    margin-top: 14px;
+}
+form button{
+    font-family: Myriad Pro;
+    font-size: 14pt;
+    border-color:#2ecc71;
+    background-color: #2ecc71;
+    color: #dadada;
+    width: 140px;
+    height: 40px;
+    margin-top: 14px;
+    
+}
+.set_cIASH{
+    position: absolute;
+    left: 900px;
+    top: 830px;   
+}
+
+

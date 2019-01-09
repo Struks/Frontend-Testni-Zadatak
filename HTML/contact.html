@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Contact</title>
+        <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    </head>
+    <body>
+        <header><!--Header start-->
+            <div class="header_positon">  
+                <div class="logo_position">
+                    <img src="Images/logo1.png" > 
+                </div>   
+                <div class="media_position">               
+                    <a href="#" class="set_twitter">
+                        <img src="Images/twitter.png" class="color_twitter">
+                    </a>
+                    <a href="#" class="set_facebook">
+                        <img src="Images/facebook.png">
+                    </a>
+                    <a href="#" class="set_rss">
+                        <img src="Images/rss.png">
+                    </a>
+                    <a href="#" class="set_pinterest">
+                        <img src="Images/pinterest.png">
+                    </a>
+                    <a href="#" class="set_google+">
+                        <img src="Images/google+.png">
+                    </a>
+                    <a href="#" class="set_tribbble">
+                        <img src="Images/tribbble.png">
+                    </a>
+                </div>
+                <div class="line_position">
+                    <img src="Images/line.png">
+                </div>
+            </div>
+        </header><!--Header end-->
+        <div class="main_manu"> <!--Main manu start-->   
+            <a class="home_page" href="index.html">Home</a> 
+            <a class="about_page" href="about.html">About</a>   
+            <a class="work_page" href="work.html">Work</a>
+            <a class="contact_page" href="contact.html">Contact</a> 
+        </div><!--Main manu end-->
+        <div class="set_business"><!--Green field-->
+            <img src="Images/contactGreenField.png">
+        </div><!--green field end-->
+        <div id="map"><!--Init google map-->
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1501497.0297145478!2d18.272132024904117!3d42.69077357088852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x134c3217242c1fcb%3A0x384c9d866effd346!2sMontenegro!5e0!3m2!1sen!2s!4v1547038194930" width="1400px" height="500px" frameborder="0" style="border:0" allowfullscreen></iframe> 
+
+        </div> <!--Init google map-->
+        <div class="text_contact_form">
+            <img src="Images/contactTextForm.png">
+        </div>
+        <form action="#" id="contact_form"><!--Start FORM-->
+            
+            <div class="group_up">
+                <input type="text" id="name" placeholder="Name" required><!--have put required in HTML-->
+            </div>
+            <div class="group_up">
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="group_up">
+                <input type="text" id="subject" placeholder="Subject" required>
+            </div>
+            <div class="group_up set_message">
+                <textarea  id="message"></textarea>
+            </div>
+                <button type="submit" id="button" onclick="submitForm(event)">SEND MESSAGE</button>
+            
+        </form><!--End FORM-->
+        <img src="Images/contactInfoAndStoreHours.png" class="set_cIASH">
+        
+        <div class="before_footer">
+            <img src="Images/beforeFooter.png" class="set_beforeFooter">
+        </div>
+        <footer>
+            <img src="Images/footer.png" class="set_footer">
+        </footer>
+        <!--Our Script-->
+        <script src="js/app.js"></script>
+        <!--mislim da key za API ispod ne radi :(-->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9nNFM_tQxnw1J5orBSVHVyXFQLgwgqiw&callback=initMap"
+         async defer></script>
+        
+    </body>
+</html>
